@@ -16,7 +16,7 @@ function createGrid(tilesPerSide) {
     }
 }
 
-createGrid(16);
+createGrid(50);
 
 // function poop(tileNumber) {
 
