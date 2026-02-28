@@ -1,6 +1,7 @@
 const gridContainer = document.querySelector('.grid-container');
-const gridLength = 1000
+const gridLength = 1000;
 const tileMargin = 2;
+// const gridSelection = document.querySelector('#grid-selection');
 
 function createGrid(tilesPerSide) {
 
@@ -18,6 +19,16 @@ function createGrid(tilesPerSide) {
 
 createGrid(20);
 
-// function poop(tileNumber) {
+function gridSelect() {
+    const gridSelection = document.querySelector('#grid-selection');
+    const value = gridSelection.value;
+    // console.log('selected value:', value);
+    if (gridSelection.value == '10x10') {
+        createGrid(10);
+    }
+    else if (gridSelection.value == '20x20') {
+        createGrid(20);
+    }
+}
 
-// }
+gridSelect();
