@@ -21,13 +21,38 @@ createGrid(20);
 
 function gridSelect() {
     const gridSelection = document.querySelector('#grid-selection');
+    gridSelection.addEventListener('change', gridSelect)
+    gridContainer.innerHTML = '';
     const value = gridSelection.value;
-    // console.log('selected value:', value);
     if (gridSelection.value == '10x10') {
         createGrid(10);
     }
     else if (gridSelection.value == '20x20') {
         createGrid(20);
+    }
+    else if (gridSelection.value == '30x30') {
+        createGrid(30);
+    }
+    else if (gridSelection.value == '40x40') {
+        createGrid(40);
+    }
+    else if (gridSelection.value == '50x50') {
+        createGrid(50);
+    }
+    else if (gridSelection.value == '60x60') {
+        createGrid(60);
+    }
+    else if (gridSelection.value == '70x70') {
+        createGrid(70);
+    }
+    else if (gridSelection.value == '80x80') {
+        createGrid(80);
+    }
+    else if (gridSelection.value == '90x90') {
+        createGrid(90);
+    }
+    else if (gridSelection.value == '100x100') {
+        createGrid(100);
     }
 }
 
