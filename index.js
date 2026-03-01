@@ -1,7 +1,6 @@
 const gridContainer = document.querySelector('.grid-container');
 const gridLength = 1000;
 const tileMargin = 2;
-// const gridSelection = document.querySelector('#grid-selection');
 
 function createGrid(tilesPerSide) {
 
