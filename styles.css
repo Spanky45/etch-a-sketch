@@ -91,6 +91,8 @@ select {
 .swatch-card {
     display: flex;
     flex-direction: row;
+    /* width: 200px;
+    height: 60px; */
 }
 
 .swatch {
