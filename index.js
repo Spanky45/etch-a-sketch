@@ -2,6 +2,18 @@ const gridContainer = document.querySelector('.grid-container');
 const gridLength = 1000;
 const tileMargin = 2;
 
+const swatchButtons = document.querySelectorAll('.swatch');
+const swatchGroup = document.querySelector('.swatch-panel');
+
+swatchGroup.addEventListener('click',(event) => {
+    if (!event.target.classList.contains('swatch')) return;
+
+    document.querySelectorAll('.swatch').forEach(btn => {
+        btn.classList.remove('selected');
+    });
+    event.target.classList.add('selected');
+});
+
 function createGrid(tilesPerSide) {
 
     const tileSize = gridLength / tilesPerSide - (tileMargin * 2);

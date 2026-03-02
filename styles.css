@@ -91,6 +91,8 @@ select {
 .swatch-card {
     display: flex;
     flex-direction: row;
+    gap: 10px;
+
 }
 
 .swatch {
@@ -102,7 +104,7 @@ select {
 }
 
 #red1 {
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 #red {
@@ -136,4 +138,16 @@ select {
 
 #white {
     background-color: white;
+}
+
+.swatch-text {
+    margin-top: 5px;
+}
+
+.selected {
+    outline: 3px solid white;
+}
+
+.selected#white {
+    outline: 3px solid black;
 }
